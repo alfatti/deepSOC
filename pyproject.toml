@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mfoptmm"
+version = "0.1.0"
+description = "Mean-field learned quoting vs exact HJB on the BBG A.1 options market-making problem"
+requires-python = ">=3.10"
+dependencies = ["jax>=0.4.30", "numpy", "scipy"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["mfoptmm*"]
